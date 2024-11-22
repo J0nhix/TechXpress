@@ -1,0 +1,110 @@
+.precios{
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* Estilos avanzados para el modal con botones en dos filas */
+.mi-modal {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.mi-modal-hidden {
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.mi-modal .modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+.mi-modal .modal-content {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.mi-modal .modal-header {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mi-modal .modal-header h5 {
+  margin-bottom: 0;
+}
+
+.mi-modal .modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.mi-modal .modal-footer {
+  border-top: 1px solid #ddd;
+  padding: 15px;
+}
+
+.mi-modal .btn-secondary{}
+.mi-modal .btn-primary {
+  flex: 1 0 calc(50% - 10px); /* Ajusta el tamaño de cada botón y el espacio entre ellos */
+  transition: background-color 0.3s;
+  color: black;
+}
+
+.canjear{
+  background-color: rgb(92, 184, 92);
+}
+
+.canjear:hover{
+  background-color:  rgb(92, 184, 92);
+}
+
+.mi-modal .btn-primary:hover {
+  background-color: #9f4bff;
+}
+
+/* Estilo para el botón de cerrar */
+.mi-modal .close {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.mi-modal .close:hover {
+  color: #ccc;
+}
+
+/* Ajuste de la tipografía */
+.mi-modal h5,
+.mi-modal p,
+.mi-modal button {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Ajuste de las transiciones generales */
+.mi-modal .modal-content,
+.mi-modal .modal-dialog,
+.mi-modal .modal-body,
+.mi-modal .modal-footer {
+  transition: all 0.3s;
+}
+
+
